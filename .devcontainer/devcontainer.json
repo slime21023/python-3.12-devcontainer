@@ -1,0 +1,29 @@
+{
+    "name": "Python 3.12 Development Environment",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.linting.enabled": true,
+                "python.linting.ruffEnabled": true,
+                "python.formatting.provider": "ruff",
+                "editor.formatOnSave": true,
+                "editor.codeActionsOnSave": {
+                    "source.fixAll.ruff": "explicit",
+                    "source.organizeImports": "explicit"
+                },
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "charliermarsh.ruff",
+                "ms-toolsai.jupyter",
+                "njpwerner.autodocstring",
+                "tamasfe.even-better-toml"
+            ]
+        }
+    },
+    "remoteUser": "vscode"
+}
