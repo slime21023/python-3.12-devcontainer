@@ -1,6 +1,8 @@
 {
     "name": "Python 3.12 Development Environment",
-    "dockerFile": "Dockerfile",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
     "customizations": {
         "vscode": {
             "settings": {
